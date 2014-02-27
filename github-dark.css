@@ -1,6 +1,3 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-@namespace svg url(http://www.w3.org/2000/svg);
-@-moz-document regexp("^https?://((raw[2-9]*|gist|guides|help|status|developer)\.)?github\.com.*") {
 /* Github Dark Theme v1.8.3 (2/22/2014)
  * https://github.com/StylishThemes/GitHub-Dark
  * http://userstyles.org/styles/37035
@@ -8,8 +5,7 @@
  */
 /* AGENT_SHEET */
   body {
-    background-color: #222 !important;
-    background-image: /*[[bg-choice]]*/ url(http://stylishthemes.github.io/GitHub-Dark/images/backgrounds/bg-tile1.png) !important;
+    background-color: #2b303b !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
     /*[[bg-options]]*/
@@ -32,7 +28,7 @@
   .org-repo-name a:hover .repo-prefix, .timeline-commits .commit-meta .octicon-comment-discussion:before,
   .numbers-summary a:hover .octicon:before, .history-link .octicon:before, .steps li.current .mega-octicon:before,
   .oauth-permissions-details .permission-title, .permission-help .octicon:before, .setup-info-module .octicon:before {
-    color: /*[[base-color]]*/ #4183C4 !important;
+    color: #4f5b66 !important;
   }
   /* Base color panel */
   .button:hover, .button:active, option:hover, .minibutton:not(.disabled):hover, .minibutton:active, .minibutton:hover code,
@@ -43,26 +39,26 @@
   .gist-item .bubble:hover, .dashboard-tabs a:hover, .dropdown-menu > li > a:hover, .documentation-results a:hover,
   input[type=submit]:hover, .hidden-text-expander a:hover, .blog-search-results em,
   .codesearch-cols em {
-    background: /*[[base-color]]*/ #4183C4 !important;
+    background: #4f5b66 !important;
   }
   .context-button:after {
-    border-color: /*[[base-color]]*/ #4183C4 transparent transparent !important;
+    border-color: transparent !important;
   }
   .octofication .message {
-    border-color: /*[[base-color]]*/ #4183C4 !important;
+    border-color: transparent !important;
   }
   /* === Notification icon === */
   .notification-indicator .unread {
-    background: /*[[base-color]]*/ #4183C4 !important;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 rgba(0, 0, 0, 0.1), 0 0 10px /*[[base-color]]*/ #4183C4 !important;
+    background: #4f5b66 !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 rgba(0, 0, 0, 0.1), 0 0 10px #4f5b66 !important;
   }
   /* text selection */
   ::selection {
-    background: /*[[base-color]]*/ #4183C4 !important;
+    background: #4f5b66 !important;
     color: #fff !important;
   }
   ::-moz-selection {
-    background: /*[[base-color]]*/ #4183C4 !important;
+    background: #4f5b66 !important;
     color: #fff !important;
   }
   /* input focus hightlight */
@@ -71,7 +67,7 @@
   input[type="password"]:focus, input.focus[type="email"], input[type="email"]:focus, input.focus[type="number"],
   input[type="number"]:focus, input.focus[type="tel"], input[type="tel"]:focus, input.focus[type="url"],
   input[type="url"]:focus, textarea.focus, textarea:focus, #q:focus ~ button {
-    border-color: /*[[base-color]]*/ #4183C4 !important;
+    border-color: transparent !important;
     box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.075) inset, 0px 0px 5px rgba(255, 255, 255, .075) !important;
   }
   input[type="text"], #adv_code_search .search-page-label, input[type="password"], input[type="email"],
@@ -81,8 +77,8 @@
   /* === Inputs === */
   select, input:not(.js-color-editor-input), textarea {
     -moz-appearance: none !important;
-    background: #181818 !important;
-    border-color: #555 !important;
+    background: #232730 !important;
+    border-color: transparent !important;
     color: #eee !important;
   }
   /* custom checkbox and radio styles. We need a full set of styles here as WebKit removes all of them when
@@ -90,8 +86,8 @@
   input[type="checkbox"], input[type="checkbox"]:focus, input[type="radio"], input[type="radio"]:focus,
   input[type="checkbox"]:hover:active, input[type="radio"]:hover:active {
     -webkit-appearance: none !important;
-    background-color: #181818 !important;
-    border: 1px solid #555 !important;
+    background-color: #232730 !important;
+    border: 0px solid #555 !important;
     color: #eee !important;
     height: 1em !important;
     width: 1em !important;
@@ -216,7 +212,7 @@
   }
   /* repo labels, private repo lists */
   .repo-label span, .private .repo-list-item {
-    background: #222 !important;
+    background: #343d46 !important;
     color: #777 !important;
   }
   /* previously orange border bottom */
@@ -236,7 +232,7 @@
     transition: none !important;
   }
   .js-menu-target:hover .dropdown-arrow {
-    border-top-color: /*[[base-color]]*/ #4183C4 !important;
+    border-top-color: #4f5b66 !important;
   }
   /* GitHub Bug: The focused + in the header has an ugly underline from a:active */
   .js-menu-target:focus, .js-menu-target:active {
@@ -277,11 +273,11 @@
   div.article div.helper div.content, .boxed-group-inner .help, dl.new-email-form, .file .meta-divider,
   .avatar-stack.multiple-avatars:before, .file-box, .file-actions .button-group li, .gist .gist-file .gist-data,
   #contributions-calendar .contrib-details div {
-    border-color: #555 !important;
+    border-color: transparent !important;
   }
   .command-bar:not(.command-bar-focus) input[type="text"], #top_search_form input[type="text"], .discusion-topic-infobar,
   .box-header, .box-body {
-    border-color: #444 !important;
+    border-color: transparent !important;
   }
   #footer, .pagehead, table tr, table td, blockquote, .pagination a:first-child, .pagination a:last-child, .pagination span:first-child
   .pagination span:last-child, .dashboard-tabs, .graphs, .graph, .featured-callout .rule, .sub-nav,
@@ -291,10 +287,10 @@
   .new-discussion-timeline .sidebar-item+.sidebar-item,.gh-header-meta, .new-discussion-timeline .previewable-comment-form .comment-body,
   .sidebar-module ul h3, .headlines li, .discussion-sidebar-item + .discussion-sidebar-item, .markdown-format img,
   div#common-issues ul li, .setup-wrapper .oauth-permissions, .about-facts, .starred-repo {
-    border-color: #333 !important;
+    border-color: transparent !important;
   }
   .pagination a, .pagination span.gap, .discussion-item-icon, .date:after {
-    border-color: #222 !important;
+    border-color: transparent !important;
   }
   .filter-tab.selected {
     border: #444 1px solid !important;
@@ -338,7 +334,7 @@
     border-left: transparent 1px solid !important;
   }
   .context-button:hover:after, .switcher > span:before {
-    border-color: #eee transparent transparent !important;
+    border-color: transparent !important;
   }
   /* branch selector button - uses borders to make select button */
   .select-menu-button::before {
@@ -399,7 +395,7 @@
   /* === tooltip === */
   .octotip {
     background-color: #003 !important;
-    border-color: #006 !important;
+    border-color: transparent !important;
   }
   /* === #111 === */
   pre, pre code, .diff-line-code, .list-browser-item.closed, body.windows #header, .markdown-body code, .content code,
@@ -407,7 +403,7 @@
   .content .sectionbody .dlist dt, #facebox pre, .commit-preview .message pre, .content p > tt, .markdown-body tt,
   .markdown-format code {
     background: #111 none !important;
-    border-color: #333 !important;
+    border-color: transparent !important;
   }
   /* === #181818 === */
   /* needed background inbetween #111 and #222 :P */
@@ -417,12 +413,12 @@
   .blob-line-nums, .file-data, .signup-plans th, .signup-plans td, .signup-plans-orgs th, .signup-plans-orgs td,
   .line-data, .line-number, .commits td, .featured-callout, .compare-pr-placeholder, .sidebar-module ul ul li,
   .native-download, .setup-info-module, div#common-issues ul {
-    background: #181818 !important;
-    border-color: #333 !important;
+    background: #232730 !important;
+    border-color: transparent !important;
     border-width: 1px !important;
   }
   .divider .blob-line-code div.highlight, .octofication .broadcast-icon-mask {
-    background: #181818 !important;
+    background: #232730 !important;
     border: 0 !important;
   }
   .image, .markdown-body table tr:nth-child(2n), .explore-section:nth-child(2n), .blog-feedback,
@@ -433,12 +429,12 @@
   #commits_bucket .timeline-commits td, .timeline-comment, .sidebar-module, #contributors-master svg|svg.viz,
   svg|svg.spark, svg|svg.capped-card-content, body.api .content tbody, .markdown-format img,
   #common-issues, .full-commit .commit-meta, .setup-wrapper .oauth-permissions-details, .milestone-list {
-    background: #181818 !important;
+    background: #232730 !important;
   }
   /* slightly darker background than #222 */
   .commit-group-item:nth-child(2n), .box-body, #readme .markdown-body, table.files, .mergeable, .org-module,
   .org-add-footer, .fullscreen-overlay, .previewable-comment-form .tabnav-tab.selected, .commit-tease {
-    background: #1b1b1b !important;
+    background: #232730 !important;
   }
   .commit-group, .markdown-body table tr {
     background: #141414 !important;
@@ -461,7 +457,7 @@
   .timeline-commits-minimal .commit-icon .octicon, .upload-progress, .search-results-listing em, .discussion-bubble-inner,
   .tabnav-tab.selected, .inline-comments, ol.steps li, table th, .repository-sidebar a.js-selected-navigation-item.selected,
   #wiki-history table td, .commit.file-history-tease, .menu a.selected, .gist .gist-file .gist-data, .repository-lang-stats {
-    background: #222 !important;
+    background: #343d46 !important;
   }
   /* Darkest background color (#222), no image, with border & radius */
   svg, #browser, .repos, .options-group, .pagehead ul.tabs li a.selected, .subnav-bar, .options-content,
@@ -471,8 +467,8 @@
   #header-wrapper,  ul.feature-tabs li.highlight, .pagination, .gist-meta, .filterbar .filters li, .starting-comment .body,
   .list-tip, .commit_oneline, .filterbox, .conversation-list-heading .inner, .autocomplete-results, .new-comments .body,
   .subscription-row, .blog-post .meta, .display tr {
-    background: #222 none !important;
-    border-color: #444 !important;
+    background: #343d46 none !important;
+    border-color: transparent !important;
   }
   /* Darkest background (#222), leave image, no border */
   .locales, .add-bubble, .select-menu-filters, .notification-settings, #files > .description, li.contextswitch ul,
@@ -488,7 +484,7 @@
   #graph_data .tab.selected, .line-comments, .team-grid .team-members, h3.conversation-list-heading strong,
   .file-commit-form .commit-form {
     background-color: #222 !important;
-    border-color: #555 !important;
+    border-color: transparent !important;
   }
   /*** semi-transparent #222 ***/
   /* let some background image show */
@@ -545,7 +541,7 @@
  .documentation-results a, pre div[style^="background-color: rgb(255, 255, 204);"], .plans-pricing-callout,
   .svg-tip, .auto-search-group .search-filters, .auth-form-body {
     background-color: #333 !important;
-    border-color: #555 !important;
+    border-color: transparent !important;
   }
   /* Panel background (#333), no image, no border */
   .pagehead ul.tabs li a:hover, .repos .bottom-bar, #languages .popular, .color-label-list a.selected, .tip-box h4,
@@ -566,13 +562,13 @@
   #issues_next .labels .label a, .module .inner, .inline-comment-form a.selected, .team-repositories-blankslate,
   .discussion-event-status-head_ref_deleted .discussion-item-icon, .pull-head {
     background: #333 none !important;
-    border-color: #555 !important;
+    border-color: transparent !important;
   }
   #issues_next > .browser_header ul.actions li.selected {
     background: #333 !important;
     margin-top: 3px !important;
     padding: 5px 5px 2px 5px !important;
-    border-color: #333 !important;
+    border-color: transparent !important;
     border-radius: 3px 3px 0 0 !important;
     background-clip: padding-box !important;
   }
@@ -623,7 +619,7 @@
     shape-rendering: geometricPrecision !important;
   }
   #contributors-master svg|svg.viz {
-    border: 1px solid #555 !important;
+    border: 0px solid #555 !important;
   }
   .js-graph-punchcard svg|svg.viz {
     background: transparent !important;
@@ -679,7 +675,7 @@
   .preview-selected .preview-tab, .select-menu-tabs a.selected,
   .sunken-menu .sunken-menu-item.selected:after, #files .file .meta .info span.diffstat {
     background: #333 none !important;
-    border-color: #555 !important;
+    border-color: transparent !important;
   }
   /* Light Panel background (#444), leave image and border */
   ul.bignav li a:hover, ul.smallnav li a:hover, .comments-wrapper, .rackspace, .filter-item:not(.color-label):hover,
@@ -712,11 +708,11 @@
   /* own comments - blue highlight */
   .timeline-comment-current-user .timeline-comment-header, .github-jobs-promotion p, .octotip,
   .markdown-format .alert:not(.warning), .full-commit.commit {
-    background: linear-gradient(to bottom, #182030, #183040) !important;
+    background: #182030 !important;
   }
   .timeline-comment-current-user, .github-jobs-promotion p, .octotip,
   .markdown-format .alert:not(.warning), .full-commit.commit {
-    border: 1px solid #246 !important;
+    border: 0px solid #246 !important;
   }
   .timeline-comment-current-user .timeline-comment-header {
     border-bottom-color: #246 !important;
@@ -736,24 +732,24 @@
   .dashboard-tabs li a, .full-commit .browse-button, a.function-button, .capped-box h3,
   .expandable-line-num .diff-expander:hover, .boxed-group .heading, #contributors .capped-card h3,
   .comment-form-head.tabnav, .add-pill-form, .gist .gist-file .gist-meta {
-    background: linear-gradient(to bottom, #282828, #181818) !important;
-    border-color: #333 !important;
+    background: #282828 !important;
+    border-color: transparent !important;
   }
   .box-header, .issues-list-actions {
-    background: linear-gradient(to bottom, #282828, #181818) !important;
+    background: #282828 !important;
   }
   .boxed-group > h3, .search-form button, .file-box .meta, .auth-form-header {
-    background: linear-gradient(to bottom, #282828, #181818) !important;
-    border-color: #555 !important;
+    background: #282828 !important;
+    border-color: transparent !important;
   }
   /* inverted dark grey gradient */
   .progress-bar, .pagination .current, .clone-url-button.selected a, .asc .sort-type, .desc .sort-type, .mini-bar-graph,
   .minibutton.selected, .issues-list>ul>li.unread, .timeline-commits-header, .usage-bar dd {
-    background: linear-gradient(to bottom, #181818, #282828) !important;
-    border-color: #333 !important;
+    background: #181818 !important;
+    border-color: transparent !important;
   }
   .timeline-comment-header {
-    background: linear-gradient(to bottom, #181818, #282828) !important;
+    background: #181818 !important;
   }
   /* vertical left border for side menu */
   .sunken-menu-contents {
@@ -897,8 +893,8 @@
   /* Panel's */
   #posts #rss, .signup-button, .hero h1, .plan.personal, .caption, .centered-graphic,
   .login_form h1 {
-    background: /*[[base-color]]*/ #4183C4 !important;
-    border-color: /*[[base-color]]*/ #4183C4 !important;
+    background: #4f5b66 !important;
+    border-color: transparent !important;
   }
   /* === red === */
   /* Red panel */
@@ -907,7 +903,7 @@
   .minibutton.danger:hover span, .comment-form-error, .closed-issues, .state-indicator.closed, .state-closed,
   .discussion-event-status-closed .discussion-item-icon {
     background: #c31e16 !important;
-    border-color: #333 !important;
+    border-color: transparent !important;
     color: #ccc !important;
   }
   .btn-close-issue:hover, button.classy[name="comment_and_close"]:hover, .button.danger:hover {
@@ -920,14 +916,14 @@
   }
   /* red border */
   .mergeable-dirty .bubble .mergeable {
-    border-color: #c31e16 !important;
+    border-color: transparent !important;
   }
   .mergeable-dirty .bubble:after {
     border-right-color: #a31e16 !important;
   }
   /* red gradient */
   .dangerzone > h3 {
-    background: linear-gradient(#a33,#722) !important;
+    background: #a33 !important;
     border-radius: 0 !important;
   }
   /* bright red text */
@@ -943,19 +939,19 @@
   #message.minor, .chzn-results li em, #missing-readme, .warning, .page-notice, a.button.classy, .signed-out-comment,
   .facebox-alert, .branch-status.status-pending .discussion-item-icon, .discussion-event-status-renamed .discussion-item-icon,
   .state-indicator.renamed {
-    background: linear-gradient(#402c17,#5e4022) !important;
-    border-color: #5e4022 !important;
+    background: #402c17 !important;
+    border-color: transparent !important;
     color: #ddd !important;
   }
   .status-pending, .discussion-topic .branch-status.status-pending, .status-pending .octicon {
     background: #402c17 !important;
     color: #9C6A38 !important;
-    border-color: #5e4022 !important;
+    border-color: transparent !important;
   }
   /* === Yellow panel=== */
   .recently-touched-branches {
-    background: linear-gradient(#220,#331) !important;
-    border-color: #773 !important;
+    background: #220 !important;
+    border-color: transparent !important;
   }
   .recently-pushed-branch-details, .recently-touched-branches .octicon:before {
     color: #884 !important;
@@ -972,11 +968,11 @@
   .branch-status.status-success .discussion-item-icon, .state-open, .state-proposed, .big-notice, .state-indicator.open,
   .state-indicator.proposed, .status-success:not(.octicon-check), .state-indicator.reopened, #message.good {
     background: #305530 !important;
-    border-color: #062 !important;
+    border-color: transparent !important;
   }
   /* Green border */
   .mergeable-clean .bubble .mergeable {
-    border-color: #6cc644 !important;
+    border-color: transparent !important;
   }
   .mergeable-clean .bubble:after, .branch-action-state-clean .branch-action-body:before,
   .branch-action-state-clean .branch-action-body:after {
@@ -991,8 +987,8 @@
   }
   /* interactive button - bright border */
   button.primary, .minibutton.primary:not([href$="compare"]), a.primary.button.classy {
-    background: linear-gradient(to bottom, #407045, #305530) !important;
-    border-color: #083 !important;
+    background: #407045 !important;
+    border-color: transparent !important;
   }
   /* New additions */
   .repo-owner-tag .tag, .gist-owner-tag .tag {
@@ -1005,14 +1001,14 @@
   }
   button.primary:not(:disabled):hover, .minibutton.primary:not(:disabled):not([href$="compare"]):hover,
   a.primary.button.classy:hover {
-    background: linear-gradient(to bottom, #508055, #407045) !important;
+    background: #508055 !important;
   }
   /* === silver panel/button === */
   .kbd, .signup-button:hover, a.signin:hover, .hero .textographic, .hero .screenographic, .dashboard-notice,
   #readme span.name, .commit-group-heading, .pagination span.current,
   .box-action:hover, .box-action:active {
-    background: linear-gradient(to bottom, #444, #333) !important;
-    border-color: #555 !important;
+    background: #444 !important;
+    border-color: transparent !important;
   }
   /* Red */
   .dangerzone-module h4, .minibutton .octicon-mute {
@@ -1074,17 +1070,17 @@
     background-position: center -95px !important;
   }
   .js-comment-field {
-    border: 1px solid #555 !important;
+    border: 0px solid #555 !important;
     border-bottom: none !important;
   }
   .drag-and-drop {
     background: #282828 !important;
-    border-color: #555 !important;
+    border-color: transparent !important;
     border-top: 1px dashed #444 !important;
   }
   .boxed-group-inner {
     background: #282828 !important;
-    border-color: #555 !important;
+    border-color: transparent !important;
   }
   /* issue labels manager */
   #issues_next .sidebar .labels-editable .label-target .delete a {
@@ -1099,7 +1095,7 @@
   }
   /* pull request avatar bubble */
   .avatar-bubble:before, .discussion-bubble-content:before {
-    border-color: transparent #333 transparent transparent !important;
+    border-color: transparent !important;
   }
   .mini-avatar-bubble {
     background-image: url(http://stylishthemes.github.io/GitHub-Dark/images/bubble-arrow-up.png) !important;
@@ -1149,7 +1145,7 @@
     border-right: 0 !important;
   }
   .js-details-container.navigation-focus .gobutton {
-    background: linear-gradient(#444, #222) !important;
+    background: #444 !important;
   }
   /* no top border radius */
   table.files {
@@ -1160,19 +1156,19 @@
   .files-bubble {
     background: transparent !important;
     padding: 0 !important;
-    border: 1px solid #555 !important;
+    border: 0px solid #555 !important;
   }
   /* add border */
   .capped-card, .inline-comment, .image, .commit.file-history-tease, .issues-list {
-    border: 1px solid #555 !important;
+    border: 0px solid #555 !important;
   }
   .pull-info, .branch-link, .milestone-list .progress-bar, .commit-ref {
-    border: 1px solid #444 !important;
+    border: 0px solid #444 !important;
   }
   /* prefs menu - add border */
   .menu, .uploaded-files {
-    background: #181818 !important;
-    border: 1px solid #555 !important;
+    background: #232730 !important;
+    border: 0px solid #555 !important;
   }
   /* gist header vertical lines */
   .header .divider-vertical {
@@ -1202,11 +1198,11 @@
     background-color: #a1882b !important;
   }
   .gist-item.vis-secret .file-box {
-    border: 1px solid #a1882b !important;
+    border: 0px solid #a1882b !important;
   }
   .gist-item.vis-secret .line-numbers {
     background-color: #a1882b !important;
-    border-color: #a1882b !important;
+    border-color: transparent !important;
   }
   .gist-item.vis-secret .line-numbers span, .secret .mega-octicon:before, .secret .repo-label span,
   .page-new-repo div.form-checkbox .octicon-lock:before {
@@ -1229,14 +1225,14 @@
   }
   /* light grey - breaks in diff (with line numbers) */
   .highlight .gc td, .highlight .gc pre, .highlight .gu {
-    background: #222 !important;
+    background: #343d46 !important;
     color: #888 !important;
   }
   /* git diff line additions (dark green) */
   .highlight .gi, .highlight .gi pre, .gi .diff-line-code, .gi .diff-line-code pre, .markdown-body ins,
   .markdown-body ins > *, .markdown-body .added {
     background: #030 !important;
-    border-color: #080 !important;
+    border-color: transparent !important;
   }
   .markdown-body > ins, .markdown-body .added {
     box-shadow:inset 4px 0 0 #080 !important;
@@ -1245,7 +1241,7 @@
   .highlight .gd, .gd .diff-line-code, .gd .diff-line-code pre, .markdown-body del, .markdown-body del > *,
   .markdown-body .removed {
     background: #400 !important;
-    border-color: #800 !important;
+    border-color: transparent !important;
   }
   .markdown-body > del, .markdown-body .removed {
     box-shadow:inset 4px 0 0 #800 !important;
@@ -1263,12 +1259,12 @@
   /* git diff line numbers (med green) */
   .gi .diff-line-num {
     background: #020 !important;
-    border-color: #040 !important;
+    border-color: transparent !important;
   }
   /* git diff line deletions (med red) */
   .gd .diff-line-num {
     background: #300 !important;
-    border-color: #500 !important;
+    border-color: transparent !important;
   }
   /* custom language colors */
   .language-color[style$="#9DC3FF;"] {background-color: #ae8e00 !important}
@@ -1391,7 +1387,7 @@
   /*[[pygments-theme]]*/
   /* GitHub-Dark syntax highlighting */
   .highlight, .highlight pre:not(.diff-line-pre),
-  .highlight table { background-color:#111 !important; color:#d0d0d0 !important; }
+  .highlight table { background-color:#2b303b !important; color:#eff1f5 !important; }
   .highlight .hll { background-color:#404040 !important; }
   .highlight .err { color:#a61717 !important; background-color:#311 !important; }
   .highlight .o { color:#777 !important; }
@@ -1399,23 +1395,22 @@
   .highlight .cs { color:#e50808 !important; background-color:#520000 !important; }
   .highlight .gi { color:#589819 !important; }
   .highlight .gp { color:#aaa !important; }
-  .highlight .nf { color:#098 !important; }
+  .highlight .nf { color:#96b5b4 !important; }
   .highlight .w { color:#666 !important; }
-  .highlight .c, .highlight .cm, .highlight .c1 { color:#3677a9 !important; }
+  .highlight .c, .highlight .cm, .highlight .c1 { color:#a7adba !important; }
   .highlight .g, .highlight .l, .highlight .x, .highlight .ge, .highlight .gs, .highlight .ld, .highlight .ni,
   .highlight .nl, .highlight .nx, .highlight .py { color:#d0d0d0 !important; }
-  .highlight .k, .highlight .n, .highlight .go { color:#ccc !important; }
+  .highlight .k, .highlight .n, .highlight .go { color:#B48EAF !important; }
   .highlight .cp, .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se,
-  .highlight .sh, .highlight .si, .highlight .s1, .highlight .ss { color:#D2691E !important; }
+  .highlight .sh, .highlight .si, .highlight .s1, .highlight .ss { color:#a3be8c !important; }
   .highlight .gd, .highlight .gr, .highlight .gt { color:#d22323 !important; }
   .highlight .gh, .highlight .gu { color:#fff !important; }
   .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .nt,
-  .highlight .ow { color:#6ab825 !important; }
+  .highlight .ow { color:#ab7967 !important; }
   .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .sr,
-  .highlight .il { color:#cd2828 !important; }
+  .highlight .il { color:#d08770 !important; }
   .highlight .na, .highlight .ne { color:#bbb !important; }
-  .highlight .nb, .highlight .bp { color:#24909d !important; }
-  .highlight .nc, .highlight .nn { color:#447fcf !important; }
-  .highlight .no, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color:#4ca !important; }
+  .highlight .nb, .highlight .bp { color:#96b5b4 !important; }
+  .highlight .nc, .highlight .nn { color:#ebcb8b !important; }
+  .highlight .no, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color:#bf616a !important; }
   .highlight .nd, .highlight .sx { color:orange !important; }
-}
